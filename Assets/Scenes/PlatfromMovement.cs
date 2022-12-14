@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlatfromMovement : MonoBehaviour
 {
     [SerializeField]
-    public Vector3 targetPos1;
+    public Vector3 targetPos1; //targetPos = points of movement
     [SerializeField]
     public Vector3 targetPos2;
     [SerializeField]
     public float speed = 1f;
     public bool canMove;
-    public bool firstMove;
+    public bool firstMove; //vettefan vad denna gör
     void Start()
     {
 
@@ -20,7 +20,7 @@ public class PlatfromMovement : MonoBehaviour
     }
     void Update()
     {
-        if (transform.position == targetPos1)
+        if (transform.position == targetPos1) 
         {
             firstMove = false;
         }
@@ -28,7 +28,7 @@ public class PlatfromMovement : MonoBehaviour
         {
             firstMove = true;
         }
-        if (canMove)
+        if (canMove) // Om den kan röra sig rör den sig till punkt A, när på A gå till B
         {
             if (firstMove)
             {
