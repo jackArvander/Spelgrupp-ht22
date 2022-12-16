@@ -1,6 +1,9 @@
 {
   "dependencies": {
-    "com.unity.cinemachine": "2.8.9",
+
+=======
+    "com.unity.2d.sprite": "1.0.0",
+>>>>>>> f94a24003f818483b6abd940b92013d7819a9e73
     "com.unity.collab-proxy": "1.17.2",
     "com.unity.feature.development": "1.0.1",
     "com.unity.ide.rider": "3.0.15",
