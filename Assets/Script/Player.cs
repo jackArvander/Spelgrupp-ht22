@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKey(up) && transform.position.y < 3)
         {
-            transform.position += new Vector3(0, 5, 0) * Time.deltaTime; //hoppa (alex)
+            transform.position += new Vector3(0, 10, 0) * Time.deltaTime; //hoppa (alex)
         }
     }
 
