@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FiendeZ : MonoBehaviour
-{
+{ 
     public GameObject ShootPoint;
     public GameObject fireBall1;
     public GameObject player;
@@ -15,11 +15,16 @@ public class FiendeZ : MonoBehaviour
     private float distance;
     public float fireRate = 0.5f;
     private float nextFire = 0.0f;
-    public float Force; 
+    public float Force;
+
+    public AudioSource audioSource;
+    
+
     // Start is called before the first frame update
     void Start()
     {// har redan bestämt sig att ha spelaren som mål
         target = GameObject.FindGameObjectWithTag("Player").transform;
+        audioSource = GetComponent<AudioSource>();
     }
 
    
@@ -38,6 +43,7 @@ public class FiendeZ : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
             transform.rotation = Quaternion.Euler(Vector3.forward * angle);
         }
+        
 
         if (Time.time > nextFire)
         {
@@ -49,8 +55,9 @@ public class FiendeZ : MonoBehaviour
             GameObject clone = Instantiate(fireBall1, transform.position, transform.rotation);
             Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
             rb.AddForce(transform.right * 2500 * Time.deltaTime, (ForceMode2D)ForceMode.Impulse);
-            
+            audioSource.Play();
         }
+    
     }
 
 }
