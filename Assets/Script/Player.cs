@@ -36,16 +36,10 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("koll");
         if (collision.gameObject.tag == "Wall")
         {
-            print("vägg");
-            Destroy(this.gameObject); //ska göra så att spelaren dör när den nuddar väggen, men funkar inte (alex)
+           Destroy(this.gameObject); //gör så att spelaren dör när den nuddar väggen (alex)
         }
     }
 
-    private void OnTriggerEnter(Collider collision)
-    {
-        
-    }
 }
