@@ -24,7 +24,7 @@ public class FiendeZ : MonoBehaviour
     {
         // har redan best?mt sig att ha spelaren som m?l
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();// by Zion
     }
 
 
@@ -33,17 +33,18 @@ public class FiendeZ : MonoBehaviour
     void Update()
     {
         // följer efter spelaren
-        distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
-        direction.Normalize();
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        distance = Vector2.Distance(transform.position, player.transform.position);// by Zion
+        Vector2 direction = player.transform.position - transform.position;// by Zion
+        direction.Normalize();// by Zion
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;// by Zion
 
+        // rör sig om spelaren kommer för nära
         if (distance < distanceBetween)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+            transform.rotation = Quaternion.Euler(Vector3.forward * angle);// by Zion
         }
-
+         // laddar skottet
         if (Time.time > nextFire)
         {
             if (!fireBall1)
@@ -51,9 +52,9 @@ public class FiendeZ : MonoBehaviour
 
             nextFire = Time.time + fireRate;
             // skjuter
-            GameObject clone = Instantiate(fireBall1, transform.position, transform.rotation);
+            GameObject clone = Instantiate(fireBall1, transform.position, transform.rotation); // by Zion
             Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
-            rb.AddForce(transform.right * 2500 * Time.deltaTime, (ForceMode2D)ForceMode.Impulse);
+            rb.AddForce(transform.right * 2500 * Time.deltaTime, (ForceMode2D)ForceMode.Impulse); // by Zion
 
         }
 

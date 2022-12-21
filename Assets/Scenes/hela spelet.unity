@@ -1224,9 +1224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 149131bf75fc4a647995b6db099b4381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  left: 48
-  right: 0
-  up: 122
+  left: 97
+  right: 100
+  up: 32
 --- !u!212 &1300364638
 SpriteRenderer:
   m_ObjectHideFlags: 0
