@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(right) && transform.position.x < 10)
+        if (Input.GetKey(right) && transform.position.x < 50)
         {
             transform.position += new Vector3(10, 0, 0) * Time.deltaTime; //move right (alex)
         }
