@@ -43,17 +43,14 @@ public class FiendeZ : MonoBehaviour
         {
             if (!fireBall1)
                 return;
-            // "laddar" skottet
+         
             nextFire = Time.time + fireRate;
+           // skjuter
             GameObject clone = Instantiate(fireBall1, transform.position, transform.rotation);
             Rigidbody2D rb = clone.GetComponent<Rigidbody2D>();
-            rb.AddForce(transform.right * 500 * Time.deltaTime, (ForceMode2D)ForceMode.Impulse);
+            rb.AddForce(transform.right * 2500 * Time.deltaTime, (ForceMode2D)ForceMode.Impulse);
             
         }
     }
 
-    private GameObject Instantiate(GameObject fireBall, Transform position, Transform rotation)
-    {
-        throw new NotImplementedException();
-    }
 }
