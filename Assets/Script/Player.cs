@@ -22,11 +22,11 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(right) && transform.position.x < 10)
         {
-            transform.position += new Vector3(10, 0, 0) * Time.deltaTime; //röra sig åt höger (alex)
+            transform.position += new Vector3(10, 0, 0) * Time.deltaTime; //move right (alex)
         }
         if (Input.GetKey(left) && transform.position.z > -20)
         {
-            transform.position += new Vector3(-10, 0, 0) * Time.deltaTime; //röra sig åt vänster (alex)
+            transform.position += new Vector3(-10, 0, 0) * Time.deltaTime; //move left (alex)
         }
         if (Input.GetKey(up) && transform.position.y < 3)
         {
@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-           Destroy(this.gameObject); //gör så att spelaren dör när den nuddar väggen (alex)
+           Destroy(this.gameObject); //player dies when touches wall (alex)
         }
     }
 
