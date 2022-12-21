@@ -123,6 +123,79 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &125808834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -8.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 131288141001589743, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153776742391026590, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_Name
+      value: DeathHole
+      objectReference: {fileID: 0}
+    - target: {fileID: 3153776742391026590, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_TagString
+      value: DeathCol
+      objectReference: {fileID: 0}
+    - target: {fileID: 4775125644753454245, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 7321988659342990932, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad40e0b2d2e72e041b476ca5d85fd710, type: 3}
 --- !u!1 &226098811
 GameObject:
   m_ObjectHideFlags: 0
