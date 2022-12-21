@@ -15,6 +15,19 @@ public class PlayerPHMovements : MonoBehaviour
 
     }
 
+    private void ResetPlayer()
+    {
+        transform.position = new Vector3(1, -3, 0);
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "DeathCol")
+        {
+            ResetPlayer();//Återställer spelarens position när den colliderar med "DeathCol"-taggat object (dvs när den faller ner i ett hål) -Arvid
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -29,6 +42,7 @@ public class PlayerPHMovements : MonoBehaviour
         if (Input.GetKey(jump))
         {
             transform.position += new Vector3(0, 5, 0) * Time.deltaTime;
+            //Bara skit som får test-spelaren att röra på sig så att jag kan testa scroll-funktion mm. -Arvid
         }
     }
 }
